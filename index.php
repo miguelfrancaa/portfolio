@@ -7,7 +7,7 @@
 	$controller = "home";
 
 	$allowed_controllers = [
-
+		"home"
 	];
 
 	if(!empty($url_parts[1])) {

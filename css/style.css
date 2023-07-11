@@ -1,0 +1,481 @@
+@font-face {
+  font-family: NeueHaas;
+  src: url('../fonts/neuehaas/NeueHaasDisplayRoman.ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: NeueHaas;
+  src: url('../fonts/neuehaas/NeueHaasDisplayMediu.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: NeueHaas;
+  src: url('../fonts/neuehaas/NeueHaasDisplayBold.ttf');
+  font-weight: 800;
+}
+
+
+*{box-sizing: border-box;}
+html,body{padding: 0px;margin: 0px;}
+img{max-width: 100%;}
+
+body{
+	font-family: NeueHaas;
+}
+
+a{
+	color: black;
+}
+
+ul{
+	list-style: none;
+}
+
+main{
+	min-height: 90vh;
+}
+
+/* header */
+
+header{
+	margin-top: 30px;
+	margin-bottom: 100px;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.gabiruska{
+	font-weight: 500;
+}
+
+.projectsnabout{
+	text-align: right;
+	padding-right: 25px;
+	cursor: pointer;
+}
+
+.projectsnabout a:hover{
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid;
+	animation-name: borderr;
+	animation-duration: 0.5s;
+}
+
+.contactHeader{
+	text-align: right;
+}
+
+/* body */
+
+.gdesigner{
+	font-size: 75px;
+	font-weight: 800;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.gabiru{
+	overflow: hidden;
+	animation-name: gabrielfernandes;
+	animation-duration: 2s;
+}
+
+.graphicdesigner{
+	overflow: hidden;
+	animation-name: gabrielfernandes;
+	animation-duration: 3s;
+}
+
+.gabout{
+	font-size: 30px;
+	font-weight: 100;
+	margin-bottom: 60px;
+}
+
+.gabout1{
+	overflow: hidden;
+	white-space: nowrap;
+	animation:  typing 1.5s steps(60, end),
+	blink-caret .75s step-end infinite;
+}
+
+.gabout2{
+	width: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	animation:  typing 1.5s steps(60, end),
+	blink-caret .75s step-end infinite forwards;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+}
+
+.gcontact{
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.gcontact .contact{
+	border: 1px solid black;
+	padding: 12px 24px;
+	border-radius: 20px;
+}
+
+.contact:hover{
+	background-color: black;
+	color: white;
+	transition: 1s;
+	text-decoration: none;
+}
+
+.arrowdown{
+	margin-top: 90px;
+	margin-left: 30px;
+	font-size: 80px;
+}
+
+.projectsindex{
+	margin-top: 70px;
+	font-size: 50px;
+	font-weight: 100;
+}
+
+.projectsindex2{
+	margin-top: 0px;
+}
+
+.lastProjects{
+	margin-bottom: 40px;
+	font-size: 30px;
+}
+
+.projectNumber{
+	text-align: right;
+}
+
+.eachProject{
+	margin-bottom: 50px;
+}
+
+.imgProject{
+	display: flex;
+	justify-content: center;
+}
+
+.imgProject2{
+	height: 600px;
+	width: 100%;
+	background-size: 100%;
+  background-position: center;
+}
+
+.imgProject2:hover{
+   background-size: 110%;
+   transition: 0.5s ease-in-out;
+}
+
+.imgProject img{
+	height: 500px;
+	border-radius: 5px;
+}
+
+.projectBlock{
+	margin-bottom: 150px;
+}
+
+.arrowText{
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.imgAbout{
+	width: 100%;
+	border-radius: 20px;
+	margin-bottom: 70px;
+}
+
+.aboutText{
+	font-size: 30px;
+	font-weight: 100;
+	margin-bottom: 70px;
+}
+
+.eachGoal{
+	margin-bottom: 60px;
+}
+
+.goalTitle{
+	font-size: 18px;
+}
+
+.goalText{
+	font-weight: 100;
+	font-size: 18px;
+	color: darkgrey;
+}
+
+.servicesContainer{
+	margin-bottom: 100px;
+}
+
+.services{
+	margin-top: 40px;
+}
+
+.serviceNumber{
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.serviceName{
+	font-size: 30px;
+}
+
+.serviceContent{
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.eachService{
+	margin-top: 40px;
+}
+
+.projectDate{
+	text-align: right;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+.projectName{
+	font-size: 30px;
+}
+
+.projectText{
+	margin-top: 30px;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+.projectInfo{
+	margin-top: 50px;
+}
+
+.seeMore{
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 30px;
+	text-align: center;
+	border-radius: 100%;
+	pointer-events: none;
+}
+
+.filterProjects{
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 100;
+	font-size: 25px;
+}
+
+.projectTitle{
+	font-size: 80px;
+	font-weight: 800;
+	margin-bottom: 200px;
+}
+
+.date{
+	font-size: 40px;
+	font-weight: 100;
+	margin-left: 20px;
+}
+
+.description{
+	font-weight: 100;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.imgOne{
+	margin-bottom: 50px;
+}
+
+.description2{
+	font-weight: 100;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.client div{
+	display: inline-block;
+	width: 50%;
+}
+
+.client2{
+	text-align: right;
+}
+
+.servicesProject{
+	font-size: 25px;
+	font-weight: 100;
+	margin-bottom: 50px;
+}
+
+
+/* FOOTER */
+
+.footerContainer{
+	margin-top: 30px;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.footerContainer .a{
+	text-align: left;
+}
+
+.footerContainer .b{
+	text-align: center;
+}
+
+.footerContainer .c{
+	text-align: right;
+}
+
+.a{
+	display: flex;
+	justify-content: space-between;
+}
+
+#topBtn{
+	background-color: white;
+	border: none;
+}
+
+/* animations */
+
+@keyframes gabrielfernandes {
+	from {margin-left:  -1000px}
+	to {margin-left: 0px;}
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* MEDIAQUERYS */
+
+/* <= 1440 HD Ready */
+@media screen and (max-width:1440px){
+
+}
+@media screen and (max-width:1200px){
+}
+/* <= 1280 HD */
+@media screen and (max-width:1280px){}
+/* <= 1024 iPad Landscape */
+@media screen and (max-width:1024px){}
+/* <= 998 Bootstrap MD */
+@media screen and (max-width:992px){
+	.gcontact{
+		text-align: center;
+	}
+
+	.arrowdown{
+		display: flex;
+		justify-content: center;
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	.arrowdownnnn div{
+		text-align: center;
+	}
+
+	.gdesigner{
+		font-size: 60px;
+	}
+
+	.gabout{
+		font-size: 25px;
+	}
+
+	.projectNumber{
+		text-align: left;
+	}
+
+	.contactHeader{
+		text-align: left;
+	}
+
+	.gcontact{
+		margin-bottom: 60px;
+	}
+
+	.b{
+		margin-top: 20px;
+	}
+
+	.footerContainer .c{
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	header{
+		margin-bottom: 50px;
+	}
+
+	.imgProject img{
+		height: 200px;
+	}
+
+	.projectsindex{
+		font-size: 35px;
+	}
+
+  .projectBlock{
+		margin-top: 20px;
+		margin-bottom: 70px;
+	}
+
+	.eachProject{
+		margin-bottom: 25px;
+	}
+}
+/* <= 768 iPad Portrait */
+@media screen and (max-width:768px){
+	.projectsnabout{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+	}
+}
+/* <= 667 iPhone Landscape */
+@media screen and (max-width:667px){
+	.gdesigner{
+		font-size: 50px;
+	}
+
+	.gabout{
+		font-size: 22px;
+	}
+
+	.gabout1, .gabout2{
+		white-space: normal;
+	}
+}
+/* <= 414 iPhone Plus Portrait */
+@media screen and (max-width:414px){
+}
+/* <= 375 iPhone Portrait */
+@media screen and (max-width:375px){
+}
+/* <= 320 iPhone 4 ao 5S Portrait */
+@media screen and (max-width:320px){
+}
