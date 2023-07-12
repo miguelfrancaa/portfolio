@@ -325,6 +325,15 @@ header{
 	margin-bottom: 50px;
 }
 
+.filterProjects button{
+	background-color: transparent;
+	border: none;
+}
+
+.filter-button.active{
+	text-decoration: underline;
+}
+
 
 /* FOOTER */
 
