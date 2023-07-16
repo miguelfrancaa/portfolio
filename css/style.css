@@ -162,6 +162,12 @@ header{
 .imgProject{
 	display: flex;
 	justify-content: center;
+	width: 100%;
+	height: 600px;
+	background-position: center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .imgProject2{
@@ -179,10 +185,6 @@ header{
 .imgProject img{
 	height: 500px;
 	border-radius: 5px;
-}
-
-.projectBlock{
-	margin-bottom: 150px;
 }
 
 .arrowText{
@@ -256,6 +258,7 @@ header{
 	margin-top: 30px;
 	font-size: 15px;
 	font-weight: 100;
+	margin-bottom: 100px;
 }
 
 .projectInfo{
@@ -448,8 +451,7 @@ header{
 		font-size: 35px;
 	}
 
-  .projectBlock{
-		margin-top: 20px;
+  .projectText{
 		margin-bottom: 70px;
 	}
 

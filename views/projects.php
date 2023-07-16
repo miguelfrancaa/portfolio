@@ -39,36 +39,24 @@
 		</div>
 		</div>
 		<div class="container projectsindex2">
-			<div class="projectBlock">
-			<div class="row eachProject identity">
-			<div class="row">
-				<a href="#"><div class="col-md-12 col-sm-12 col-xs-12 imgProject">
-					<div class="imgProject2" style="background-image: url(img/projects/marcha.png);"></div>
+<?php
+	foreach($projects as $project){
+		echo "<div class='projectBlock'>
+			<div class='row eachProject ".$project["class"]."'>
+			<div class='row'>
+				<a href='#'><div class='col-md-12 col-sm-12 col-xs-12 imgProject'>
+					<div class='imgProject2' style='background-image: url(img/projects/".$project["img_description"].");'></div>
 				</div></a>
 			</div>
-			<div class="row projectInfo">
-				<div class="col-md-6 projectName">Marcha Studio</div>
-				<div class="col-md-6 projectDate">(2022)</div>
-				<div class="col-md-6 projectText">Identidade visual para Marcha Estúdio. Estúdio de Design multidisciplinar.</div>
+			<div class='row projectInfo'>
+				<div class='col-md-6 projectName'>".$project["title"]."</div>
+				<div class='col-md-6 projectDate'>(".$project["year"].")</div>
+				<div class='col-md-6 projectText'>".$project["description"]."</div>
 			</div>
 			</div>
-			</div>
-
-			<div class="projectBlock">
-			<div class="row eachProject illustration">
-			<div class="row">
-				<a href="#"><div class="col-md-12 col-sm-12 col-xs-12 imgProject">
-					<div class="imgProject2" style="background-image: url(img/projects/precarizacao.png);"></div>
-				</div></a>
-			</div>
-			<div class="row projectInfo">
-				<div class="col-md-6 projectName">Delivery</div>
-				<div class="col-md-6 projectDate">(2022)</div>
-				<div class="col-md-6 projectText">Experimento visual baseado no cotidiano dos “entregadores de aplicativo”.
-													Sem outras opções de inserção no mercado de trabalho, milhares de jovens brasileiros se sujeitam a péssimas condições oferecidas pelos aplicativos de delivery, na busca pela garantia de uma renda mínima.</div>
-			</div>
-			</div>
-			</div>
+			</div>";
+	}
+?>
 		</div>
 		
 	</main>
