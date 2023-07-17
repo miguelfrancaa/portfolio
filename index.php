@@ -7,7 +7,7 @@
 	$controller = "home";
 
 	$allowed_controllers = [
-		"home", "about", "projects", "project"
+		"home", "about", "projects", "project", "contact"
 	];
 
 	if(!empty($url_parts[1])) {
