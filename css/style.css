@@ -175,6 +175,7 @@ header{
 	width: 100%;
 	background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .imgProject2:hover{
@@ -457,6 +458,20 @@ header{
 
 	.eachProject{
 		margin-bottom: 25px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.imgProject{
+		height: 500px;
+	}
+
+	.projectInfo{
+		margin-top: 30px;
+	}
+
+	.projectDate{
+		text-align: left;
 	}
 }
 /* <= 768 iPad Portrait */

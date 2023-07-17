@@ -31,7 +31,7 @@
 		public function getAllProjects(){
 
 			$query = $this->db->prepare("
-				SELECT projects.title, projects.description, projects.year, projects.img_description, categories.class, categories.name
+				SELECT projects.project_id, projects.title, projects.description, projects.year, projects.img_description, categories.class, categories.name
 				FROM projects
 				INNER JOIN categories USING (category_id)
 				ORDER BY year desc
@@ -41,5 +41,33 @@
 
 			return $query->fetchAll();
 		}
+
+		public function getProjectDetails($id){
+			$query = $this->db->prepare("
+				SELECT *
+				FROM projects
+				WHERE project_id = ?
+				");
+
+				$query->execute([
+				$id
+			]);
+
+			return $query->fetch();
+			}
+
+		public function getProjectImgs($id){
+			$query = $this->db->prepare("
+				SELECT *
+				FROM project_imgs
+				WHERE project_id = ?
+				");
+
+				$query->execute([
+				$id
+			]);
+
+			return $query->fetchAll();
+			}
 	}
 ?>

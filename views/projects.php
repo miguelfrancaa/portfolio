@@ -44,7 +44,7 @@
 		echo "<div class='projectBlock'>
 			<div class='row eachProject ".$project["class"]."'>
 			<div class='row'>
-				<a href='#'><div class='col-md-12 col-sm-12 col-xs-12 imgProject'>
+				<a href='project/".$project["project_id"]."'><div class='col-md-12 col-sm-12 col-xs-12 imgProject'>
 					<div class='imgProject2' style='background-image: url(img/projects/".$project["img_description"].");'></div>
 				</div></a>
 			</div>
