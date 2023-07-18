@@ -57,6 +57,13 @@
 			</div>
 		</div>
 	</main>
+
+	<div class="row">
+			<div class="col-md-6">Next Project</div>
+			<div class="col-md-6">Next Project</div>
+		</div>
+
+		
 <?php
 	require("includes/footer.php");
 	require("includes/scripttags.php");

@@ -27,17 +27,19 @@
 		$numberProject = $numberProjects[0]--;
 
 		echo "
-		<div class='projectBlock'>
-			<div class='row eachProject'>
-				<div class='col-md-6 col-sm-12 col-xs-12 '>
-					".$project["title"]."<br>
-				</div>
-				<div class='col-md-6 col-sm-12 col-xs-12 projectNumber'>(".str_pad($numberProject, 3, '0', STR_PAD_LEFT).")</div>
+		<div class='eachProject'>
+			<div class='row'>
+			<a href='project/".$project["project_id"]."'>
+				<div class='col-md-6 col-sm-6 col-xs-6 projectName'>".$project["title"]."</div>
+				<div class='col-md-6 col-sm-6 col-xs-6 numberProject projectName'>".str_pad($numberProject, 3, '0', STR_PAD_LEFT)."</div>
 			</div>
 			<div class='row'>
-				<div class='col-md-12 col-sm-12 col-xs-12 imgProject' style='background-image: url(img/projects/".$project["img_description"].");'></div>
+				<div class='col-md-12 col-sm-12 col-xs-12'>
+					<img src='img/projects/".$project["img_description"]."'>
+				</div>
+			</a>
 			</div>
-			</div>
+		</div>
 		";
 	}
 ?>
@@ -47,3 +49,5 @@
 	require("includes/footer.php");
 	require("includes/scripttags.php");
 ?>
+
+".str_pad($numberProject, 3, '0', STR_PAD_LEFT)."

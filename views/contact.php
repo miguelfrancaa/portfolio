@@ -4,16 +4,16 @@
 ?>
 	<main>
 		<div class="container">
-		<form method="post" action="/contact">
-			<label for="name" id="fname">Name</label>
-			<input type="text" name="name" min="4" max="32" require><br>
-			<label for="email" id="femail">Email</label>
-			<input type="email" name="email" min="5" max="255" require><br>
-			<label for="subject" id="fsubject">Subject</label>
-			<input type="text" name="subject" min="5" max="200" require><br>
-			<label for="message" id="fmessage">Message</label>
-			<input type="text" name="message" require><br>
-			<button type="submit" name="submit">Send Message</button>
+		<form class="formClient" method="post" action="/contact">
+			<label id="labelName" for="name" id="fname">Name</label>
+			<input id="inputName" type="text" name="name" min="4" max="32" require><br><br>
+			<label id="labelEmail" for="email" id="femail">Email</label>
+			<input id="inputEmail" type="email" name="email" min="5" max="255" require><br><br>
+			<label id="labelSubject" for="subject" id="fsubject">Subject</label>
+			<input id="inputSubject" type="text" name="subject" min="5" max="200" require><br><br>
+			<label id="labelMessage" for="message" id="fmessage">Message</label>
+			<textarea id="inputMessage" name="message"></textarea><br><br><br>
+			<button type="submit" name="submit">Send Message &nbsp&nbsp<i class="fa fa-arrow-right"></i></button>
 		</form>
 <?php
 if (isset($_POST["submit"])) {

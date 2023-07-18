@@ -5,7 +5,7 @@
 		public function getProjectsIndex() {
 
 			$query = $this->db->prepare("
-				SELECT title, description, year, img_description, category_id, year
+				SELECT project_id, title, description, year, img_description, category_id, year
 				FROM projects
 				ORDER BY year desc
 				LIMIT 3

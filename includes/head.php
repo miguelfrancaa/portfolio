@@ -6,7 +6,7 @@
 		<title>GABRIEL FERNANDES</title>
 		<meta name="keywords" content="GABRIEL FERNANDES">
 		<meta name="description" content="gabriel, fernandes, design, graphic, portugal, brasil, art, projects">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 	</head>

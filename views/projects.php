@@ -24,11 +24,12 @@
 <?php
 	foreach($projects as $project){
 		echo "<div class='projectBlock'>
+			<a href='project/".$project["project_id"]."'>
 			<div class='row eachProject ".$project["class"]."'>
 			<div class='row'>
-				<a href='project/".$project["project_id"]."'><div class='col-md-12 col-sm-12 col-xs-12 imgProject'>
-					<div class='imgProject2' style='background-image: url(img/projects/".$project["img_description"].");'></div>
-				</div></a>
+				<div class='col-md-12 col-sm-12 col-xs-12'>
+					<img src='img/projects/".$project["img_description"]."'>
+				</div>
 			</div>
 			<div class='row projectInfo'>
 				<div class='col-md-6 projectName'>".$project["title"]."</div>
@@ -36,6 +37,7 @@
 				<div class='col-md-6 projectText'>".$project["description"]."</div>
 			</div>
 			</div>
+			</a>
 			</div>";
 	}
 ?>
