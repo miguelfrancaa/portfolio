@@ -13,7 +13,7 @@
 			<input id="inputSubject" type="text" name="subject" min="5" max="200" require><br><br>
 			<label id="labelMessage" for="message" id="fmessage">Message</label>
 			<textarea id="inputMessage" name="message"></textarea><br><br><br>
-			<button type="submit" name="submit">Send Message &nbsp&nbsp<i class="fa fa-arrow-right"></i></button>
+			<button type="submit" name="submit">Send Message</button>
 		</form>
 <?php
 if (isset($_POST["submit"])) {

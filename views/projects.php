@@ -28,7 +28,7 @@
 			<div class='row eachProject ".$project["class"]."'>
 			<div class='row'>
 				<div class='col-md-12 col-sm-12 col-xs-12'>
-					<img src='img/projects/".$project["img_description"]."'>
+				<div style='background-image:url(/img/projects/".$project["img_description"].");' class='imgProject2'></div>
 				</div>
 			</div>
 			<div class='row projectInfo'>
