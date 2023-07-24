@@ -7,7 +7,7 @@
 	$controller = "home";
 
 	$allowed_controllers = [
-		"home", "about", "projects", "project", "contact"
+		"home", "about", "projects", "project", "contact", "admin"
 	];
 
 	if(!empty($url_parts[1])) {
@@ -23,8 +23,21 @@
     die("NOT FOUND!");
 } 
 
+	if ($url_parts[1] = "admin") {
+		$controller = $url_parts[2];
 
-	require("controllers/" . $controller . ".php");
-	
+		$allowed_controllers = [
+			"login", "categories"
+		];
+
+		 if( !in_array($controller, $allowed_controllers) ) {
+   		 http_response_code(404);
+   		 die("NOT FOUND!");
+
+
+		}
+
+		require("controllers/" . $controller . ".php");
+		}
 
 ?>
