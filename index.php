@@ -1,5 +1,6 @@
 <?php
-
+	
+	session_start();
 
 	$url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
@@ -22,13 +23,12 @@
 	if( !in_array($controller, $allowed_controllers) ) {
    		 http_response_code(404);
   		 die("NOT FOUND!2");
-		} 
+		}
 
 	if($url_parts[1] == "admin") {
 
 			$controller = "login";
 
-			$_SESSION["csrf_token"] = bin2hex(random_bytes(16));
 
 			if(!empty($url_parts[2])) {
 					$controller = $url_parts[2];

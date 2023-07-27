@@ -23,23 +23,23 @@
 		<div class="logo-login">
 			<img src="img/logo.png">
 			<br>
-			<form method="POST" action="/admin/login">
+			<form method="post" action="/admin/login">
 				<input type="hidden" name="csrf_token" value="<?= $_SESSION["csrf_token"]?>">
 				<div class="bloco">
-					<input type="username" name="username" placeholder="username" max="64" min="5" require>
+					<input type="username" name="username" placeholder="username" max="64" min="5" required>
 				</div>
 				<div class="bloco">
-					<input type="password" name="password" placeholder="coloque a sua password" max="255" min="5" require>
+					<input type="password" name="password" placeholder="coloque a sua password" max="255" min="5" required>
 				</div>
 				<div class="bloco">
 					<button type="submit" name="send">Log In</button>
 				</div>
-			</form>
 <?php
 	if(!empty($message)){
-	echo $message;
-}
+		echo $message;
+	}
 ?>
+			</form>
 		</div>
 	</div>
 </body>
