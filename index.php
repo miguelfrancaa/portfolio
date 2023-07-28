@@ -35,7 +35,7 @@
 				}
 
 			$allowed_controllers = [
-				"login", "categories"
+				"login", "categories", "menu_admin", "adminslist"
 			];
 
 		 if( !in_array($controller, $allowed_controllers) ) {

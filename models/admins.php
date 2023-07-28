@@ -16,5 +16,23 @@
 			return $query->fetch();
 		}
 
+		public function getAdminsList(){
+			$query = $this->db->prepare("
+				SELECT *
+				FROM admins
+				");
+
+			$query->execute([]);
+
+			return $query->fetchAll();
+		}
+
+		public function BlockAdmin(){
+			$query = $this->db->prepare("
+				DELETE FROM admins
+				WHERE admin_id = ?;
+				");
+		}
+
 	}
 ?>
