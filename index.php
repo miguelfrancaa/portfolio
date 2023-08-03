@@ -34,8 +34,12 @@
 					$controller = $url_parts[2];
 				}
 
+			if(!empty($url_parts[3])) {
+			$resource_id = $url_parts[3];
+			};
+
 			$allowed_controllers = [
-				"login", "categories", "menu_admin", "adminslist"
+				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails"
 			];
 
 		 if( !in_array($controller, $allowed_controllers) ) {

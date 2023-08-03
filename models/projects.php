@@ -69,5 +69,27 @@
 
 			return $query->fetchAll();
 			}
-	}
+
+
+		public function listProjects(){
+			$query = $this->db->prepare("
+				SELECT project_id, title, description, year, img_description, category_id
+				FROM projects
+				");
+
+			$query->execute([
+			]);
+
+			return $query->fetchAll();
+			}
+
+		public function deleteProject($resource_id){
+			$query = $this->db->prepare("
+				DELETE FROM contacts
+				WHERE contact_id = ?
+				");
+
+			$query->execute([$resource_id]);
+		}
+		}
 ?>
