@@ -74,7 +74,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<img class="imgAbout" src="img/gabrielteste1.png">
+				<img class="imgAbout" src="img/<?= $about["img_2"] ?>.png">
 			</div>
 			</div>
 		</div>

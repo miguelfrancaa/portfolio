@@ -85,8 +85,8 @@
 
 		public function deleteProject($resource_id){
 			$query = $this->db->prepare("
-				DELETE FROM contacts
-				WHERE contact_id = ?
+				DELETE FROM projects
+				WHERE project_id = ?
 				");
 
 			$query->execute([$resource_id]);

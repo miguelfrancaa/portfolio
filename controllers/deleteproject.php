@@ -6,4 +6,4 @@
 
 	$project = $model->deleteProject($resource_id);
 
-	header("Location:/admin/projectsadmin.php");
+	header("Location:/admin/projectsadmin");
