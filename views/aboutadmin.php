@@ -23,26 +23,41 @@
 	<?php include('includes/headeradmin.php'); ?>
 	
 	<section>
+		<div class="sectionAb">
 		<h4>TITLE</h4>
 		<div><?=$about["title"]?></div>
+		</div>
+		<div class="sectionAb">
 		<h4>TEXT</h4>
 		<div><?=$about["text"]?></div>
+		</div>
+		<div class="sectionAb">
 		<h4>IMG</h4>
 		<img src="/img/<?=$about["img"]?>">
+		</div>
+		<div class="sectionAb">
 		<h4>TEXT2</h4>
 		<div><?=$about["text2"]?></div>
+		</div>
+		<div class="sectionAb">
 		<h4>IMG2</h4>
 		<img src="/img/<?=$about["img_2"]?>">
+		</div>
+		<div class="sectionAb">
 		<h4>SERVICES</h4>
 <?php
+	$num = 0;
+
 	foreach ($services as $service) {
+		$num++;
 		echo "
-			<div>".$service["service_id"]."</div><br>
-			 <div>".$service["title"]."</div><br>
-			 <div>".$service["content"]."</div><br>
+			<div>".$num.". <span class='serviceTitle'>".$service["title"]."</span></div>
+			 <div>".$service["content"]."</div>
+			 <hr>
 		";
 	}
 ?>
+	</div>
 	</section>
 
 	<?php include('includes/footeradmin.php'); ?>

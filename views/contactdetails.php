@@ -27,16 +27,21 @@
 		<h6 class="descricao-crm">Aqui verificamos todos os pedidos de contacto que o site gera.</h6>
 	</section>
 	<section class="dados-lista">
+		<div class="sectionAb">
 		<h4>ID</h4>
-			<div style="background-color: white; font-size: 15px;"><?= $contact["contact_id"] ?></div>
+			<div style="background-color: white; font-size: 15px;"><?= $contact["contact_id"] ?></div></div>
+		<div class="sectionAb">
 		<h4>NAME</h4>	
-			<div style="background-color: white; font-size: 15px;"><?= $contact["name"] ?></div>
+			<div style="background-color: white; font-size: 15px;"><?= $contact["name"] ?></div></div>
+		<div class="sectionAb">
 		<h4>EMAIL</h4>
-			<div style="background-color: white; font-size: 15px;"><?= $contact["email"] ?></div><br>
+			<div style="background-color: white; font-size: 15px;"><?= $contact["email"] ?></div><br></div>
+		<div class="sectionAb">
 		<h4>SUBJECT</h4>
-			<div style="background-color: white; font-size: 15px;"><?= $contact["subject"] ?></div>
+			<div style="background-color: white; font-size: 15px;"><?= $contact["subject"] ?></div></div>
+		<div class="sectionAb">
 		<h4>MESSAGE</h4>
-			<div style="background-color: white; font-size: 15px;"/><?= $contact["message"] ?></div>
+			<div style="background-color: white; font-size: 15px;"/><?= $contact["message"] ?></div></div>
 
 	</section>
 

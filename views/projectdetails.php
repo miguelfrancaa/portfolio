@@ -27,26 +27,37 @@
 		<h6 class="descricao-crm">Aqui verificamos todos os pedidos de contacto que o site gera.</h6>
 	</section>
 	<section class="dados-lista">
+		<div class="sectionAb">
 		<h4>ID</h4>
-			<div style="background-color: white; font-size: 15px;"><?= $project["project_id"] ?></div>
+			<div style="background-color: white; font-size: 15px;"><?= $project["project_id"] ?></div></div>
+		<div class="sectionAb">
 		<h4>TITLE</h4>	
-			<div style="background-color: white; font-size: 15px;"><?= $project["title"] ?></div>
+			<div style="background-color: white; font-size: 15px;"><?= $project["title"] ?></div></div>
+		<div class="sectionAb">
 		<h4>DESCRIPTION</h4>
-			<div style="background-color: white; font-size: 15px;"><?= $project["description"] ?></div><br>
+			<div style="background-color: white; font-size: 15px;"><?= $project["description"] ?></div><br></div>
+		<div class="sectionAb">
 		<h4>IMG DESCRIPTION</h4>
-			<div style="background-color: none; font-size: 15px;"><img style="height: 200px" src="/img/projects/<?= $project["img_description"] ?>"></div>
+			<div style="background-color: none; font-size: 15px;"><img style="height: 200px" src="/img/projects/<?= $project["img_description"] ?>"></div></div>
+		<div class="sectionAb">
 		<h4>CONTENT1</h4>
-			<div style="background-color: white; font-size: 15px;"/><?= $project["content1"] ?></div>
+			<div style="background-color: white; font-size: 15px;"/><?= $project["content1"] ?></div></div>
+		<div class="sectionAb">
 		<h4>CONTENT2</h4>
-			<div style="background-color: white; font-size: 15px;"/><?= $project["content2"] ?></div>
+			<div style="background-color: white; font-size: 15px;"/><?= $project["content2"] ?></div></div>
+		<div class="sectionAb">
 		<h4>CLIENT</h4>
-			<div style="background-color: white; font-size: 15px;"/><?= $project["client"] ?></div>
+			<div style="background-color: white; font-size: 15px;"/><?= $project["client"] ?></div></div>
+		<div class="sectionAb">
 		<h4>SERVICES</h4>
-			<div style="background-color: white; font-size: 15px;"/><?= $project["services"] ?></div>
+			<div style="background-color: white; font-size: 15px;"/><?= $project["services"] ?></div></div>
+		<div class="sectionAb">
 		<h4>YEAR</h4>
-			<div style="background-color: white; font-size: 15px;"/><?= $project["year"] ?></div>
+			<div style="background-color: white; font-size: 15px;"/><?= $project["year"] ?></div></div>
+		<div class="sectionAb">
 		<h4>CATEGORY</h4>
-			<div style="background-color: white; font-size: 15px;"/><?= $project["category_id"] ?></div>
+			<div style="background-color: white; font-size: 15px;"/><?= $project["category_id"] ?></div></div>
+		<div class="sectionAb">
 	</section><br>
 	<h3>IMAGES OF PROJECT</h3>
 <?php
