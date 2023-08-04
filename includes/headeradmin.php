@@ -12,22 +12,22 @@
 			<div class="menu-ul">
 				<ul>
 					<li>
-						<a href="index.php"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+						<a href="/admin/index.php"><i class="fa fa-home"></i> <span>Dashboard</span></a>
 					</li>
 					<li>
-						<a href="adminslist"><i class="fa fa-lock"></i> <span>Admins</span></a>
+						<a href="/admin/adminslist"><i class="fa fa-lock"></i> <span>Admins</span></a>
 					</li>
 					<li>
-						<a href=""><i class="fa fa-user"></i> <span>About</span></a>
+						<a href="/admin/aboutadmin"><i class="fa fa-user"></i> <span>About</span></a>
 					</li>
 					<li>
-						<a href="projectsadmin"><i class="fa fa-archive"></i> <span>Projects</span></a>
+						<a href="/admin/projectsadmin"><i class="fa fa-archive"></i> <span>Projects</span></a>
 					</li>
 					<li>
-						<a href="contactsadmin"><i class="fa fa-users"></i> <span>Contacts</span></a>
+						<a href="/admin/contactsadmin"><i class="fa fa-users"></i> <span>Contacts</span></a>
 					</li>
 					<li>
-						<a href="logout.php"><i class="fa fa-sign-out"></i> <span>Logout</span></a>
+						<a href="/admin/logout.php"><i class="fa fa-sign-out"></i> <span>Logout</span></a>
 					</li>
 				</ul>
 			</div>

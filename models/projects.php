@@ -91,5 +91,24 @@
 
 			$query->execute([$resource_id]);
 		}
+
+		public function newProject($data){
+			$query = $this->db->prepare("
+				INSERT INTO projects (title, description, year, img_description, content1, content2, client, services, category_id)
+				VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?);
+				");
+
+			$query->execute([
+				$data["title"],
+				$data["description"],
+				$data["year"],
+				$_FILES["img_description"]["name"],
+				$data["text1"],
+				$data["text2"],
+				$data["client"],
+				$data["services"],
+				$data["category"]
+			]);
 		}
+		};
 ?>

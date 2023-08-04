@@ -225,3 +225,8 @@ tr.subTR{
 .serviceTitle{
 	font-weight: 800;
 }
+
+.textAreaBack{
+	resize: none;
+	height: 100px;
+}

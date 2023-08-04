@@ -26,6 +26,9 @@
 		<h1 class="titulo-crm">CONTACTOS</h1>
 		<h6 class="descricao-crm">Aqui verificamos todos os pedidos de contacto que o site gera.</h6>
 	</section>
+	<section class="lista-btns">
+		<a href="newproject" class="btn"><i class="fa fa-plus"></i> ADICIONAR NOVO</a>
+	</section>
 	<section class="dados-lista">
 		<table class="tabela-dados-lista">
 			<thead>
