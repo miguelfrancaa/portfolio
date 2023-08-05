@@ -34,5 +34,27 @@
 				");
 		}
 
+		public function newAdmin($data){
+			$query = $this->db->prepare("
+				INSERT INTO admins (username, email, password)
+				VALUES (?, ?, ?)
+				");
+
+			$query->execute([
+				$data["username"],
+				$data["email"],
+				password_hash($data["password"], PASSWORD_DEFAULT)
+			]);
+		}
+
+		public function deleteAdmin($resource_id){
+			$query = $this->db->prepare("
+				DELETE FROM admins
+				WHERE admin_id = ?
+				");
+
+			$query->execute([$resource_id]);
+		}
+
 	}
 ?>

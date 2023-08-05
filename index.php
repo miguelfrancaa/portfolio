@@ -39,7 +39,7 @@
 			};
 
 			$allowed_controllers = [
-				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject"
+				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin"
 			];
 
 		 if( !in_array($controller, $allowed_controllers) ) {

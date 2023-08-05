@@ -17,45 +17,46 @@
 	<script src="/js/jquery-3.6.3.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 
-	<script src="js/scriptadmin.js"></script>
+	<script src="/js/scriptadmin.js"></script>
 </head>
 <body class="body">	
 	<?php include('includes/headeradmin.php'); ?>
 	
 	<section class="cabecalho">
-		<h1 class="titulo-crm">UTILIZADORES</h1>
-		<h6 class="descricao-crm">Aqui verificamos todos os utilizadores do site.</h6>
-	</section>
-	<section class="lista-btns">
-		<a href="newadmin" class="btn"><i class="fa fa-plus"></i> ADD NEW ADMIN</a>
+		<h1 class="titulo-crm">NEW PROJECT</h1>
 	</section>
 	<section class="dados-lista">
-		<table class="tabela-dados-lista">
-			<thead>
-				<tr>
-					<th>ID</th>
-					<th>USERNAME</th>
-					<th>EMAIL</th>
-					<th>PASSWORD</th>
-					<th>ACTIONS</th>
-				</tr>
-			</thead>
-			<tbody>
-<?php
-	foreach ($admins as $admin) {
-		echo "<tr>
-							<td>".$admin["admin_id"]."</td>
-							<td>".$admin["username"]."</td>
-							<td>".$admin["email"]."</td>
-							<td>".$admin["password"]."</td>
-							<td class='accao'>
-								<a href='deleteadmin/". $admin["admin_id"] ."' class='del'>DELETE ADMIN</a>
-							</td>
-							</tr>";
-	}
-?>
-			</tbody>
-		</table>	
+			<form method="POST" action="/admin/newadmin"  enctype="multipart/form-data">
+				<div class="row-no-padding">
+					<div class="col-md-8">
+						<label>
+							USERNAME<br>
+							<input type="text" name="username">
+						</label>
+					</div>
+					<div class="col-md-8">
+						<label>
+							EMAIL<br>
+							<input type="text" name="email">
+						</label>
+					</div>
+					<div class="col-md-8">
+						<label>
+							PASSWORD<br>
+							<input type="password" name="password">
+						</label>
+					</div>
+					<div class="col-md-8">
+						<label>
+							REPEAT PASSWORD<br>
+							<input type="password" name="repeatpassword">
+						</label>
+					</div>
+					<div class="col-md-6">
+						<button class="btn" type="submit" name="send">SIGN IN</button>
+					</div>
+					</div>
+			</form>
 	</section>
 
 
