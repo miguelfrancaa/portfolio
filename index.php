@@ -39,8 +39,22 @@
 			};
 
 			$allowed_controllers = [
-				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin"
+				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout"
 			];
+
+			if($url_parts[2] == "editabout") {
+
+				$option = $url_parts[3];
+
+				$allowed_options = ["title", "textabout", "img", "text2", "img2", "services"];
+
+				if( !in_array($option, $allowed_options) ) {
+   				 http_response_code(404);
+   				 die("NOT FOUND!4");
+				}
+
+				require("controllers/" . $option . ".php");
+			}
 
 		 if( !in_array($controller, $allowed_controllers) ) {
    			 http_response_code(404);

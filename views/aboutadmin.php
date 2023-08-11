@@ -25,22 +25,24 @@
 	<section>
 		<div class="sectionAb">
 		<h4>TITLE</h4>
-		<div><?=$about["title"]?></div>
+		<div><?=$about["title"]?><a href="/admin/editabout/titleabout" class="btn" style="float: right;">EDIT</a></div>
 		</div>
 		<div class="sectionAb">
 		<h4>TEXT</h4>
-		<div><?=$about["text"]?></div>
+		<div><?=$about["text1"]?><a href="/admin/editabout/textabout" class="btn" style="float: right;">EDIT</a></div>
 		</div>
 		<div class="sectionAb">
 		<h4>IMG</h4>
+		<a href="/admin/editabout/img" class="btn" style="">EDIT</a><br>
 		<img src="/img/<?=$about["img"]?>">
 		</div>
 		<div class="sectionAb">
 		<h4>TEXT2</h4>
-		<div><?=$about["text2"]?></div>
+		<div><?=$about["text2"]?><a href="/admin/editabout/textabout" class="btn" style="float: right;">EDIT</a></div>
 		</div>
 		<div class="sectionAb">
 		<h4>IMG2</h4>
+		<a href="/admin/editabout/img2" class="btn" style="">EDIT</a><br>
 		<img src="/img/<?=$about["img_2"]?>">
 		</div>
 		<div class="sectionAb">
@@ -53,10 +55,12 @@
 		echo "
 			<div>".$num.". <span class='serviceTitle'>".$service["title"]."</span></div>
 			 <div>".$service["content"]."</div>
-			 <hr>
+			 <a href='/admin/editabout/textabout' class='btn' style='float: right;'>EDIT SERVICE</a><br>
+			 <hr>'
 		";
 	}
 ?>
+	<a href="/admin/editabout/textabout" class="btn" style="">ADD SERVICE +</a><br><br>
 	</div>
 	</section>
 
