@@ -38,7 +38,7 @@
 		</div>
 		<div class="sectionAb">
 		<h4>TEXT2</h4>
-		<div><?=$about["text2"]?><a href="/admin/editabout/textabout" class="btn" style="float: right;">EDIT</a></div>
+		<div><?=$about["text2"]?><a href="/admin/editabout/text2about" class="btn" style="float: right;">EDIT</a></div>
 		</div>
 		<div class="sectionAb">
 		<h4>IMG2</h4>

@@ -25,5 +25,27 @@
 				$data["text1"]
 			]);
 		}
+
+		public function editTitle($data){
+			$query = $this->db->prepare("
+				UPDATE about
+				SET title = ?
+				");
+
+			$query->execute([
+				$data["title"]
+			]);
+		}
+
+		public function editText2($data){
+			$query = $this->db->prepare("
+				UPDATE about
+				SET text2 = ?
+				");
+
+			$query->execute([
+				$data["text2"]
+			]);
+		}
 	}
 ?>
