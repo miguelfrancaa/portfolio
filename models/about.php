@@ -47,5 +47,16 @@
 				$data["text2"]
 			]);
 		}
+
+		public function editImgAbout($data){
+			$query = $this->db->prepare("
+				UPDATE about
+				SET img = ?
+				");
+
+			$query->execute([
+				$_FILES["imgabout"]["name"]
+			]);
+		}
 	}
 ?>

@@ -46,7 +46,7 @@
 
 				$option = $url_parts[3];
 
-				$allowed_options = ["titleabout", "textabout", "img", "text2about", "img2", "services"];
+				$allowed_options = ["titleabout", "textabout", "imgabout", "text2about", "img2about", "services"];
 
 				if( !in_array($option, $allowed_options) ) {
    				 http_response_code(404);

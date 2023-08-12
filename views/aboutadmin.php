@@ -33,7 +33,7 @@
 		</div>
 		<div class="sectionAb">
 		<h4>IMG</h4>
-		<a href="/admin/editabout/img" class="btn" style="">EDIT</a><br>
+		<a href="/admin/editabout/imgabout" class="btn" style="">EDIT</a><br>
 		<img src="/img/<?=$about["img"]?>">
 		</div>
 		<div class="sectionAb">
