@@ -14,5 +14,26 @@
 			return $query->fetchAll();
 
 		}
+
+		public function newService($data) {
+			$query = $this->db->prepare("
+				INSERT INTO services (title, content)
+				VALUES (?, ?)
+				");
+
+			$query->execute([
+				$data["titleService"],
+				$data["contentService"]
+			]);
+		}
+
+		public function deleteService($resource_id){
+			$query = $this->db->prepare("
+				DELETE FROM services
+				WHERE service_id = ?
+				");
+
+			$query->execute([$resource_id]);
+		}
 	}
 ?>

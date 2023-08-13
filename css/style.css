@@ -241,6 +241,10 @@ header{
 	color: darkgrey;
 }
 
+.goalAll{
+	margin-top: 20px;
+}
+
 .servicesContainer{
 	margin-bottom: 100px;
 }

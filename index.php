@@ -39,7 +39,7 @@
 			};
 
 			$allowed_controllers = [
-				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout"
+				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice"
 			];
 
 			if($url_parts[2] == "editabout") {

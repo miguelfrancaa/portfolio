@@ -42,7 +42,7 @@
 		</div>
 		<div class="sectionAb">
 		<h4>IMG2</h4>
-		<a href="/admin/editabout/img2" class="btn" style="">EDIT</a><br>
+		<a href="/admin/editabout/img2about" class="btn" style="">EDIT</a><br>
 		<img src="/img/<?=$about["img_2"]?>">
 		</div>
 		<div class="sectionAb">
@@ -55,12 +55,13 @@
 		echo "
 			<div>".$num.". <span class='serviceTitle'>".$service["title"]."</span></div>
 			 <div>".$service["content"]."</div>
+			 <a href='/admin/deleteservice/". $service["service_id"] ."' class='btn' style='float: right; margin-left: 20px'>DELETE SERVICE</a> 
 			 <a href='/admin/editabout/textabout' class='btn' style='float: right;'>EDIT SERVICE</a><br>
 			 <hr>'
 		";
 	}
 ?>
-	<a href="/admin/editabout/textabout" class="btn" style="">ADD SERVICE +</a><br><br>
+	<a href="/admin/newservice" class="btn" style="">ADD SERVICE +</a><br><br>
 	</div>
 	</section>
 

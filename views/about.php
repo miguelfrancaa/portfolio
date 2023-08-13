@@ -42,7 +42,7 @@
 
 		echo "<div class='row eachGoal'>
 				<div class='col-md-4 col-sm-0 col-xs-0'></div>
-				<div class='col-md-8 col-sm-0 col-xs-0'>
+				<div class='col-md-8 col-sm-0 col-xs-0 goalAll'>
 					<div class='col-md-3 col-xs-4 col-sm-4'>0".$num.".</div>
 					<div class='col-md-9 col-xs-8 col-sm-8'>
 						<div class='goalTitle'>".$objective["objective_title"]."</div><br>
@@ -65,7 +65,7 @@
 
 		echo "<div class='row eachService'>
 				<hr>
-				<div class='col-md-3 col-sm-12 col-xs-12 serviceNumber'>0".$num.".</div>
+				<div class='col-md-3 col-sm-12 col-xs-12 serviceNumber'>0".$num2.".</div>
 				<div class='col-md-3 col-sm-12 col-xs-12 serviceName'>".$service["title"]."</div>
 				<div class='col-md-6 col-sm-12 col-xs-12 serviceContent'>".$service["content"]."</div>
 			</div>";
