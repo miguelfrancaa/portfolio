@@ -46,6 +46,24 @@
 		<img src="/img/<?=$about["img_2"]?>">
 		</div>
 		<div class="sectionAb">
+		<h4>OBJECTIVES</h4>
+<?php
+	$num = 0;
+
+	foreach ($objectives as $objective) {
+		$num++;
+		echo "
+			<div>".$num.". <span class='serviceTitle'>".$objective["objective_title"]."</span></div>
+			 <div>".$objective["objective_content"]."</div>
+			 <a href='/admin/deleteobjective/". $objective["objective_id"] ."' class='btn' style='float: right; margin-left: 20px'>DELETE OBJECTIVE</a> 
+			 <a href='/admin/editobjective/". $objective["objective_id"] ."' class='btn' style='float: right;'>EDIT OBJECTIVE</a><br>
+			 <hr>'
+		";
+	}
+?>
+	<a href="/admin/newobjective" class="btn" style="">ADD OBJECTIVE +</a><br><br>
+	</div>
+		<div class="sectionAb">
 		<h4>SERVICES</h4>
 <?php
 	$num = 0;
