@@ -74,7 +74,7 @@
 			<div>".$num.". <span class='serviceTitle'>".$service["title"]."</span></div>
 			 <div>".$service["content"]."</div>
 			 <a href='/admin/deleteservice/". $service["service_id"] ."' class='btn' style='float: right; margin-left: 20px'>DELETE SERVICE</a> 
-			 <a href='/admin/editabout/textabout' class='btn' style='float: right;'>EDIT SERVICE</a><br>
+			 <a href='/admin/editservice/". $service["service_id"] ."' class='btn' style='float: right;'>EDIT SERVICE</a><br>
 			 <hr>'
 		";
 	}

@@ -35,5 +35,31 @@
 
 			$query->execute([$resource_id]);
 		}
+
+		public function serviceToEdit($resource_id){
+			$query = $this->db->prepare("
+				SELECT *
+				FROM services
+				WHERE service_id = ?
+				");
+
+			$query->execute([$resource_id]);
+
+			return $query->fetch();
+		}
+
+		public function editService($data){
+			$query = $this->db->prepare("
+				UPDATE services
+				SET title = ?, content = ?
+				WHERE service_id = ?
+				");
+
+			$query->execute([
+				$data["service_title"],
+				$data["service_content"],
+				$data["service_id"]
+				]);
+		}
 	}
 ?>
