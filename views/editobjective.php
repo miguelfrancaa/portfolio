@@ -26,19 +26,19 @@
 		<h1 class="titulo-crm">EDIT OBJECTIVE</h1>
 	</section>
 	<section class="dados-lista">
-			<form method="POST" action="/admin/editobjective"  enctype="multipart/form-data">
+			<form method="POST" action="/admin/editobjective/<?= $objective["objective_id"] ?>"  enctype="multipart/form-data">
 				<div class="row-no-padding">
 					<div class="col-md-12">
 						<input type="hidden" name="objective_id" value="<?= $objective["objective_id"] ?>">
 						<label>
 							<h2>TITLE</h2><br>
-							<input type="text" name="objective_title" value="<?= $objective["objective_title"] ?>">
+							<input type="text" name="objective_title" value="<?= $objective["objective_title"] ?>" minlength= "1" maxlength = "64" required>
 						</label>
 					</div>
 					<div class="col-md-12">
 						<label>
 							<h2>CONTENT</h2><br>
-							<textarea name="objective_content" class="textAreaBack"><?= $objective["objective_content"] ?></textarea>
+							<textarea name="objective_content" minlength="1" class="textAreaBack" minlength="1" required><?= $objective["objective_content"] ?></textarea>
 						</label>
 					</div>
 					<div class="col-md-6">
@@ -47,6 +47,12 @@
 					</div>
 			</form>
 	</section>
+	
+	<?php
+		if(!empty($message)){
+			echo $message;
+		}
+	?>
 
 
 	<?php include('includes/footeradmin.php'); ?>
