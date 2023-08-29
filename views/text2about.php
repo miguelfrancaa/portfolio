@@ -31,7 +31,7 @@
 					<div class="col-md-12">
 						<label>
 							<h2>TEXT2</h2><br>
-							<textarea name="text2" class="textAreaBack"><?= $about["text2"] ?></textarea>
+							<textarea name="text2" class="textAreaBack" required><?= $about["text2"] ?></textarea>
 						</label>
 					</div>
 					<div class="col-md-6">
@@ -40,6 +40,12 @@
 					</div>
 			</form>
 	</section>
+
+<?php
+	if(!empty($message)){
+		echo $message;
+	}
+?>
 
 
 	<?php include('includes/footeradmin.php'); ?>

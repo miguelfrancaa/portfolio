@@ -31,13 +31,13 @@
 					<div class="col-md-8">
 						<label>
 							TITLE<br>
-							<input type="text" name="titleService">
+							<input type="text" name="titleService" minlength="1" maxlength="64" required>
 						</label>
 					</div>
 					<div class="col-md-8">
 						<label>
 							CONTENT<br>
-							<textarea class="textAreaBack" name="contentService"></textarea>
+							<textarea class="textAreaBack" name="contentService" minlength="1" required></textarea>
 						</label>
 					</div>
 					<div class="col-md-6">

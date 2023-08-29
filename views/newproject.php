@@ -31,25 +31,25 @@
 					<div class="col-md-8">
 						<label>
 							TITLE<br>
-							<input type="text" name="title">
+							<input type="text" name="title" minlength="1" maxlength="64" required>
 						</label>
 					</div>
 					<div class="col-md-8">
 						<label>
 							DESCRIPTION<br>
-							<input type="text" name="description">
+							<input type="text" name="description" minlength="1" required>
 						</label>
 					</div>
 					<div class="col-md-8">
 						<label>
 							IMG DESCRIPTION<br>
-							<input type="file" name="img_description">
+							<input type="file" name="img_description" required>
 						</label>
 					</div>
 					<div class="col-md-8">
 						<label>
 							TEXT1<br>
-							<textarea class="textAreaBack" name="text1"></textarea>
+							<textarea class="textAreaBack" name="text1" minlength="1" required></textarea>
 						</label>
 					</div>
 					<div class="col-md-8">
@@ -93,6 +93,12 @@
 					</div>
 			</form>
 	</section>
+
+<?php
+	if(!empty($message)){
+		echo $message;
+	}
+?>
 
 
 	<?php include('includes/footeradmin.php'); ?>

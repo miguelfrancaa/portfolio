@@ -35,11 +35,17 @@
 						</label>
 					</div>
 					<div class="col-md-6">
-						<button class="btn" type="submit" name="send">EDIT TEXT2</button>
+						<button class="btn" type="submit" name="send">EDIT IMG</button>
 					</div>
 					</div>
 			</form>
 	</section>
+
+<?php
+	if(!empty($message)){
+		echo $message;
+	}
+?>
 
 
 	<?php include('includes/footeradmin.php'); ?>

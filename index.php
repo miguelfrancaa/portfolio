@@ -42,7 +42,7 @@
 				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice", "deleteobjective",  "newobjective", "editobjective", "editservice", "editproject"
 			];
 
-			if($url_parts[2] == "editabout") {
+			if(!empty($url_parts[2]) && $url_parts[2] == "editabout") {
 
 				$option = $url_parts[3];
 

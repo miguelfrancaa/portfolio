@@ -1,4 +1,4 @@
-<?php
+ <?php
 	require("models/about.php");
 
 	$model = new About();
@@ -7,11 +7,37 @@
 
 	if(isset($_POST["send"])){
 
-		move_uploaded_file($_FILES["imgabout"]["tmp_name"], "img/" . $_FILES["imgabout"]["name"]);
+		if(isset($_FILES["imgabout"])){
 
-		$about = $model->editImgAbout($_POST);
+		$allowed_extensions = array('png', 'jpg', 'jpeg', 'svg');
 
-		header("Location: /admin/aboutadmin");
+		$filename = $_FILES["imgabout"]["name"];
+
+		$ext = pathinfo($filename, PATHINFO_EXTENSION);
+
+		$file_size = $_FILES["imgabout"]["size"];
+
+		if(in_array($ext, $allowed_extensions)){
+
+			if($file_size <= 100000000){
+
+			move_uploaded_file($_FILES["imgabout"]["tmp_name"], "img/" . $_FILES["imgabout"]["name"]);
+
+			$about = $model->editImgAbout($_POST);
+
+			header("Location: /admin/aboutadmin");
+
+			}else{
+				$message = "Carregue uma imagem com menos tamanho.";
+			}
+
+		}else{
+			$message = "Not this format.";
+		}
+
+		}else{
+			$message = "Please fill the form correctly.";
+		}
 	}
 
 	require("views/imgabout.php");

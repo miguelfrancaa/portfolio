@@ -31,25 +31,25 @@
 					<div class="col-md-8">
 						<label>
 							USERNAME<br>
-							<input type="text" name="username">
+							<input type="text" name="username" minlength="4" maxlength="64" required>
 						</label>
 					</div>
 					<div class="col-md-8">
 						<label>
 							EMAIL<br>
-							<input type="text" name="email">
+							<input type="text" name="email" minlength="5" maxlength="255" required>
 						</label>
 					</div>
 					<div class="col-md-8">
 						<label>
 							PASSWORD<br>
-							<input type="password" name="password">
+							<input type="password" name="password" minlength="8" maxlength="500" required>
 						</label>
 					</div>
 					<div class="col-md-8">
 						<label>
 							REPEAT PASSWORD<br>
-							<input type="password" name="repeatpassword">
+							<input type="password" name="repeatpassword" minlength="8" maxlength="500" required>
 						</label>
 					</div>
 					<div class="col-md-6">

@@ -15,13 +15,21 @@
 
 		$ext = pathinfo($filename, PATHINFO_EXTENSION);
 
+		$file_size = $_FILES["img2about"]["size"];
+
 		if(in_array($ext, $allowed_extensions)){
 
-		move_uploaded_file($_FILES["img2about"]["tmp_name"], "img/" . $_FILES["img2about"]["name"]);
+			if($file_size <= 100000000){
 
-		$about = $model->editImg2About($_POST);
+			move_uploaded_file($_FILES["img2about"]["tmp_name"], "img/" . $_FILES["img2about"]["name"]);
 
-		header("Location: /admin/aboutadmin");
+			$about = $model->editImg2About($_POST);
+
+			header("Location: /admin/aboutadmin");
+
+			}else{
+				$message = "Carregue uma imagem com menos tamanho.";
+			}
 
 		}else{
 			$message = "Not this format.";

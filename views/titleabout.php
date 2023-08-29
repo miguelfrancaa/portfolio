@@ -31,7 +31,7 @@
 					<div class="col-md-12">
 						<label>
 							<h2>TITLE</h2><br>
-						<input type="text" name="title" value="<?= $about["title"] ?>">
+						<input type="text" name="title" value="<?= $about["title"] ?>" required>
 						</label>
 					</div>
 					<div class="col-md-6">
@@ -40,6 +40,13 @@
 					</div>
 			</form>
 	</section>
+
+<?php
+	if(!empty($message)){
+		echo $message;
+	}
+?>
+
 
 
 	<?php include('includes/footeradmin.php'); ?>
