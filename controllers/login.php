@@ -13,15 +13,26 @@
 			if(!empty($admin)){
 
 				if(password_verify($_POST["password"], $admin["password"])){
-					$message = "ta ligado";
+
+					if($admin["is_active"] == 1){
+
+					$_SESSION["admin_id"] = $admin["admin_id"];
+					header("Location: menu_admin");
+
+				}else{
+					header("Location: /admin");
+				}
 				}else{
 					$message = "nao ta ligado";
+					header("Refresh: /admin");
 				}
 			}else{
 				$message = "There is no account with this username.";
+				header("Refresh: /admin");
 			}
 		}else{
 			$message =  "please fill the form correctly.";
+			header("Refresh: /admin");
 		}
 	}
 

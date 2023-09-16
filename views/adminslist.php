@@ -37,17 +37,26 @@
 					<th>USERNAME</th>
 					<th>EMAIL</th>
 					<th>PASSWORD</th>
+					<th>IS ACTIVE</th>
 					<th>ACTIONS</th>
 				</tr>
 			</thead>
 			<tbody>
 <?php
 	foreach ($admins as $admin) {
+
+		if($admin["is_active"] == 1){
+			$is_active = "ACTIVE";
+		}else{
+			$is_active = "NOT ACTIVE";
+		}
+
 		echo "<tr>
 							<td>".$admin["admin_id"]."</td>
 							<td>".$admin["username"]."</td>
 							<td>".$admin["email"]."</td>
 							<td>".$admin["password"]."</td>
+							<td>".$is_active."</td>
 							<td class='accao'>
 								<a href='deleteadmin/". $admin["admin_id"] ."' class='del'>DELETE ADMIN</a>
 							</td>

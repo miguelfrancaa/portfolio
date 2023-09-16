@@ -27,6 +27,10 @@
 
 	if($url_parts[1] == "admin") {
 
+			if(!isset($_SESSION["admin_id"]) && $url_parts[2] != "login"){
+				header("Location: /admin/login");
+			}
+		
 			$controller = "login";
 
 
@@ -39,7 +43,7 @@
 			};
 
 			$allowed_controllers = [
-				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice", "deleteobjective",  "newobjective", "editobjective", "editservice", "editproject"
+				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice", "deleteobjective",  "newobjective", "editobjective", "editservice", "editproject", "logout"
 			];
 
 			if(!empty($url_parts[2]) && $url_parts[2] == "editabout") {

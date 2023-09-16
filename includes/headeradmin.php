@@ -12,7 +12,7 @@
 			<div class="menu-ul">
 				<ul>
 					<li>
-						<a href="/admin/index.php"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+						<a href="/admin/menu_admin"><i class="fa fa-home"></i> <span>Dashboard</span></a>
 					</li>
 					<li>
 						<a href="/admin/adminslist"><i class="fa fa-lock"></i> <span>Admins</span></a>
@@ -27,7 +27,7 @@
 						<a href="/admin/contactsadmin"><i class="fa fa-users"></i> <span>Contacts</span></a>
 					</li>
 					<li>
-						<a href="/admin/logout.php"><i class="fa fa-sign-out"></i> <span>Logout</span></a>
+						<a href="/admin/logout"><i class="fa fa-sign-out"></i> <span>Logout</span></a>
 					</li>
 				</ul>
 			</div>

@@ -4,7 +4,7 @@
 	class Admins extends Base {
 		public function getAdmin($username){
 			$query = $this->db->prepare("
-			SELECT admin_id, password
+			SELECT admin_id, password, is_active
 			FROM admins
 			WHERE username = ?
 			");
@@ -36,8 +36,8 @@
 
 		public function newAdmin($data){
 			$query = $this->db->prepare("
-				INSERT INTO admins (username, email, password)
-				VALUES (?, ?, ?)
+				INSERT INTO admins (username, email, password, is_active)
+				VALUES (?, ?, ?, '1')
 				");
 
 			$query->execute([
