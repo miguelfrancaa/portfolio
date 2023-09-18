@@ -12,7 +12,7 @@
 	<!-- STYLE SHEET -->
 	<link rel="stylesheet" type="text/css" href="/css/styleadmin.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6O c7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<script src="/js/jquery-3.6.3.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
@@ -84,8 +84,14 @@
 					<div class="col-md-8">
 						<label>
 							CATEGORY<br>
-							<input type="number" name="category">
 						</label>
+<?php
+	foreach ($categories as $category) {
+		echo "
+			<label><input type='checkbox' name='category[]' value='". $category["category_id"] ."'>". $category["name"] ."</label><br>
+		";
+	}
+?>
 					</div>
 					<div class="col-md-6">
 						<button class="btn" type="submit" name="send">CREATE NEW PROJECT</button>

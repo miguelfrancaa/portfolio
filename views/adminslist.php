@@ -51,6 +51,12 @@
 			$is_active = "NOT ACTIVE";
 		}
 
+		if($admin["is_active"] == 1){
+		$activeButton = "Block Admin";
+			}else{
+		$activeButton = "Unblock Admin";
+			}
+
 		echo "<tr>
 							<td>".$admin["admin_id"]."</td>
 							<td>".$admin["username"]."</td>
@@ -58,7 +64,8 @@
 							<td>".$admin["password"]."</td>
 							<td>".$is_active."</td>
 							<td class='accao'>
-								<a href='deleteadmin/". $admin["admin_id"] ."' class='del'>DELETE ADMIN</a>
+								<a href='deleteadmin/". $admin["admin_id"] ."' class='del'>DELETE ADMIN</a><br>
+								<a href='activeOrNot/". $admin["admin_id"] ."' class='edit'>". strtoupper($activeButton) ."</a>
 							</td>
 							</tr>";
 	}

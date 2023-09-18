@@ -56,5 +56,37 @@
 			$query->execute([$resource_id]);
 		}
 
+		public function unblockUser($resource_id){
+			$query = $this->db->prepare("
+				UPDATE admins
+				SET is_active = ?
+				WHERE admin_id = ?
+				");
+
+			$query->execute([1, $resource_id]);
+		}
+
+		public function blockUser($resource_id){
+			$query = $this->db->prepare("
+				UPDATE admins
+				SET is_active = ?
+				WHERE admin_id = ?
+				");
+
+			$query->execute([0, $resource_id]);
+		}
+
+		public function getAdminState($resource_id){
+			$query = $this->db->prepare("
+				SELECT is_active
+				FROM admins
+				WHERE admin_id = ?
+				");
+
+			$query->execute([$resource_id]);
+
+			return $query->fetch();
+		}
+
 	}
 ?>

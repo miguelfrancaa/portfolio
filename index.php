@@ -9,7 +9,7 @@
 	$controller = "home";
 
 	$allowed_controllers = [
-		"home", "about", "projects", "project", "contact", "admin"
+		"home", "about", "projects", "project", "contact", "admin", "404", "400"
 	];
 
 	if(!empty($url_parts[1])) {
@@ -43,7 +43,7 @@
 			};
 
 			$allowed_controllers = [
-				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice", "deleteobjective",  "newobjective", "editobjective", "editservice", "editproject", "logout"
+				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice", "deleteobjective",  "newobjective", "editobjective", "editservice", "editproject", "logout", "activeOrNot"
 			];
 
 			if(!empty($url_parts[2]) && $url_parts[2] == "editabout") {

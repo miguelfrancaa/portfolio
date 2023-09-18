@@ -107,7 +107,7 @@
 				$data["text2"],
 				$data["client"],
 				$data["services"],
-				$data["category"]
+				$categories_fk
 			]);
 		}
 		};

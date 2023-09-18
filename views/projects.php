@@ -7,14 +7,14 @@
 		<div class="initialWindow">
 		<div class="container presentation">
 			<div class="row">
-				<div class="col-md-12 gdesigner">SELECTED WORK<br>(2018 - 2023)<br></div>
+				<div class="col-md-12 gdesigner">SELECTED WORK<br>(2018 - <?php echo date("Y") ?>)<br></div>
 			</div>
 			<div class="row">
 				<div class="col-md-8 col-sm-12 col-xs-12 gabout">Have a look at some of the projects I’ve worked on. Clients vary from lifestyle to tech and design companies.</div>
 			</div>
 			<div class="row filterProjects">
 				<div class="col-md-3 col-sm-12 col-xs-12"><button class="filter-button active" data-filter="all">All</button></div>
-				<div class="col-md-3 col-sm-12 col-xs-12"><button class="filter-button" data-filter="webDesign">Web Design</button></div>
+				<div class="col-md-3 col-sm-12 col-xs-12"><button class="filter-button" data-filter="webdesign">Web Design</button></div>
 				<div class="col-md-3 col-sm-12 col-xs-12"><button class="filter-button" data-filter="identity">Identity</button></div>
 				<div class="col-md-3 col-sm-12 col-xs-12"><button class="filter-button" data-filter="illustration">Illustration</button></div>
 			</div>

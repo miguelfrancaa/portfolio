@@ -13,8 +13,8 @@
 
 	if(isset($_POST["send"])){
 
-		if(isset($_POST["objective_title"]) &&
-			isset($_POST["objective_content"]) &&
+		if(isset($_POST["objective_title"]) && $_POST["objective_title"] != '' &&
+			isset($_POST["objective_content"]) && $_POST["objective_content"] != '' &&
 			mb_strlen($_POST["objective_title"]) >= 1 &&
 			mb_strlen($_POST["objective_title"]) <= 64 &&
 			mb_strlen($_POST["objective_content"]) >= 1){
