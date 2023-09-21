@@ -39,7 +39,7 @@
 					<th>YEAR</th>
 					<th>IMG</th>
 					<th>CATEGORY</th>
-					<th colspan="3">ACTIONS</th>
+					<th colspan="4">ACTIONS</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -55,7 +55,9 @@
 								<td class='accao'>
 									<a href='/admin/projectdetails/".$project["project_id"]."' class='edit'>SEE DETAILS</a></td>
 								<td class='accao'>
-									<a href='/admin/editproject/".$project["project_id"]."' class='edit'>EDIT</a></td>
+									<a href='/admin/editproject/".$project["project_id"]."' class='edit'>EDIT PROJECT DETAILS</a></td>
+								<td class='accao'>
+									<a href='/admin/editprojectphotos/".$project["project_id"]."' class='edit'>PROJECT PHOTOS</a></td>
 								<td class='accao'>
 									<a href='/admin/deleteproject/".$project["project_id"]."' class='del'>DELETE</a></td>
 							</tr>";

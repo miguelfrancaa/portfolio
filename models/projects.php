@@ -92,6 +92,26 @@
 			$query->execute([$resource_id]);
 		}
 
+		public function editProject($data){
+			$query = $this->db->prepare("
+				UPDATE projects
+				SET title = ?, description = ?, year = ?, img_description = ?, content1 = ?, content2 = ?, client = ?, services = ?
+				WHERE project_id = ?
+				");
+
+			$query->execute([
+				$data["project_title"],
+				$data["project_description"],
+				$data["project_year"],
+				$_FILES["project_imgdescription"]["name"],
+				$data["project_text1"],
+				$data["project_text2"],
+				$data["project_client"],
+				$data["project_services"],
+				$data["project_id"]
+			]);
+		}
+
 		public function newProject($data){
 			$query = $this->db->prepare("
 				INSERT INTO projects (title, description, year, img_description, content1, content2, client, services, category_id)

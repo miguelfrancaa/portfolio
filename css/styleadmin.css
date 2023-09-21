@@ -230,3 +230,8 @@ tr.subTR{
 	resize: none;
 	height: 100px;
 }
+
+.delphotos{
+	position: absolute;
+	margin-top: 20px;
+}
