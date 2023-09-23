@@ -42,6 +42,14 @@
 		}
 
 		public function addPhoto($project_id){
-			$query
+			$query = $this->db->prepare("
+				INSERT INTO project_imgs (name, project_id)
+				VALUES (?, ?)
+				");
+
+			$query->execute([
+					$_FILES["imgproject"]["name"],
+					$project_id
+			]);
 		}
 	}

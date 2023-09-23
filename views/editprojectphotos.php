@@ -41,7 +41,7 @@
 
 ?>
 
-	<a href="/admin/addphoto/<?= $projectimg["project_id"] ?>"><button class="btn"><h4>ADD PHOTO</h4></button></a>
+	<a href="/admin/newphoto/<?= $resource_id ?>"><button class="btn"><h4>ADD PHOTO</h4></button></a>
 
 	<?php include('includes/footeradmin.php'); ?>
 

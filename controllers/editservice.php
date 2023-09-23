@@ -14,7 +14,7 @@
 	if(isset($_POST["send"])){
 
 		if(isset($_POST["service_title"]) &&
-			isset($_POST["oservice_content"]) &&
+			isset($_POST["service_content"]) && $_POST["service_content"] != '' &&
 			mb_strlen($_POST["service_title"]) >= 1 &&
 			mb_strlen($_POST["service_title"]) <= 64 &&
 			mb_strlen($_POST["service_content"]) >= 1){

@@ -55,14 +55,25 @@
 				<?= $project["content2"] ?>
 			</div>
 			</div>
+			<div class="row nearProjects">
+			<div class="col-md-6 previousproject">
+<?php
+	if(!empty($previousproject)){
+		echo "<a href='/project/". $previousproject["project_id"] ."'><- PREVIOUS PROJECT</a>";
+	}
+?>
+			</div>
+			<div class="col-md-6 nextproject">
+<?php
+	if(!empty($nextproject)){
+		echo "<a href='/project/". $nextproject["project_id"] ."'>NEXT PROJECT -></a>";
+	}
+?>
+			</div>
+			</div>
+
 		</div>
 	</main>
-
-	<div class="row">
-			<div class="col-md-6">Next Project</div>
-			<div class="col-md-6">Next Project</div>
-		</div>
-
 		
 <?php
 	require("includes/footer.php");

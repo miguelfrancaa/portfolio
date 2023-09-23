@@ -332,6 +332,9 @@ header{
 
 .imgOne{
 	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .description2{
@@ -376,7 +379,7 @@ header{
 }
 
 .formClient textarea{
-	height: 200px;
+	height: 50vh;
 	resize: none;
 }
 
@@ -392,7 +395,7 @@ header{
 /* FOOTER */
 
 .footerContainer{
-	margin-top: 30px;
+	margin-top: 70px;
 	font-weight: 100;
 	font-size: 20px;
 }
@@ -417,6 +420,22 @@ header{
 #topBtn{
 	background-color: white;
 	border: none;
+}
+
+.nearProjects{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.nextproject{
+	text-align: right;
+}
+
+.imgHome{
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 /* animations */
@@ -483,6 +502,10 @@ header{
 
 	.b{
 		margin-top: 20px;
+	}
+
+	.footerContainer{
+		margin-top: 90px;
 	}
 
 	.footerContainer .c{
@@ -555,6 +578,11 @@ header{
 	.gabout1, .gabout2{
 		white-space: normal;
 	}
+
+	.footerContainer{
+		margin-top: 80px;
+	}
+
 }
 /* <= 414 iPhone Plus Portrait */
 @media screen and (max-width:414px){

@@ -43,7 +43,7 @@
 			};
 
 			$allowed_controllers = [
-				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice", "deleteobjective",  "newobjective", "editobjective", "editservice", "editproject", "logout", "activeOrNot", "editprojectphotos", "editphoto", "deletephoto", "addphoto"
+				"login", "categories", "menu_admin", "adminslist", "contactsadmin", "deletecontact", "contactdetails", "projectsadmin", "projectdetails", "deleteproject", "aboutadmin", "newproject", "newadmin", "deleteadmin", "editabout", "newservice", "deleteservice", "editservice", "deleteobjective",  "newobjective", "editobjective", "editservice", "editproject", "logout", "activeOrNot", "editprojectphotos", "editphoto", "deletephoto", "newphoto",
 			];
 
 			if(!empty($url_parts[2]) && $url_parts[2] == "editabout") {

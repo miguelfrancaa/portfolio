@@ -14,6 +14,10 @@
 
 	$projectimgs = $model->getProjectImgs($id);
 
+	$nextproject = $model->nextProject($id);
+
+	$previousproject = $model->previousProject($id);
+
 	if(empty($project)) {
 		http_response_code(404);
 		header("Location: /404");

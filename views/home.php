@@ -34,7 +34,7 @@
 				<div class='col-md-6 col-sm-6 col-xs-6 numberProject projectName'>".str_pad($numberProject, 3, '0', STR_PAD_LEFT)."</div>
 			</div>
 			<div class='row'>
-				<div class='col-md-12 col-sm-12 col-xs-12'>
+				<div class=' imgHome col-md-12 col-sm-12 col-xs-12'>
 					<img src='img/projects/".$project["img_description"]."'>
 				</div>
 			</a>
@@ -49,5 +49,3 @@
 	require("includes/footer.php");
 	require("includes/scripttags.php");
 ?>
-
-".str_pad($numberProject, 3, '0', STR_PAD_LEFT)."

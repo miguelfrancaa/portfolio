@@ -130,5 +130,36 @@
 				$categories_fk
 			]);
 		}
+
+		public function nextProject($data){
+			$query = $this->db->prepare("
+				SELECT project_id
+				FROM projects
+				WHERE project_id < ?
+				ORDER BY project_id DESC
+				LIMIT 1
+				");
+
+			$query->execute([
+				$data
+			]);
+
+			return $query->fetch();
+		}
+
+		public function previousProject($data){
+			$query = $this->db->prepare("
+				SELECT project_id
+				FROM projects
+				WHERE project_id > ?
+				ORDER BY project_id ASC
+				LIMIT 1
+				");
+
+			$query->execute([
+				$data			]);
+
+			return $query->fetch();
+		}
 		};
 ?>
