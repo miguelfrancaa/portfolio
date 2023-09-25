@@ -26,19 +26,19 @@
 		<h1 class="titulo-crm">EDIT SERVICE</h1>
 	</section>
 	<section class="dados-lista">
-			<form method="POST" action="/admin/editservice/<?= $service["service_id"] ?>"  enctype="multipart/form-data">
+			<form method="POST" action="/admin/editservice/<?= $serviceto["service_id"] ?>"  enctype="multipart/form-data">
 				<div class="row-no-padding">
 					<div class="col-md-12">
-						<input type="hidden" name="service_id" value="<?= $service["service_id"] ?>">
+						<input type="hidden" name="service_id" value="<?= $serviceto["service_id"] ?>">
 						<label>
 							<h2>TITLE</h2><br>
-							<input type="text" name="service_title" value="<?= $service["title"] ?>" minlength="1" maxlength="64" required>
+							<input type="text" name="service_title" value="<?= $serviceto["title"] ?>" minlength="1" maxlength="64" required>
 						</label>
 					</div>
 					<div class="col-md-12">
 						<label>
 							<h2>CONTENT</h2><br>
-							<textarea name="service_content" class="textAreaBack" minlength="1" required><?= $service["content"] ?></textarea>
+							<textarea name="service_content" class="textAreaBack" minlength="1" required><?= $serviceto["content"] ?></textarea>
 						</label>
 					</div>
 					<div class="col-md-6">

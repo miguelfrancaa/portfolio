@@ -9,7 +9,7 @@
 
 	$model = new Objectives();
 
-	$objective = $model->objectiveToEdit($resource_id);
+	$objectiveto = $model->objectiveToEdit($resource_id);
 
 	if(isset($_POST["send"])){
 
@@ -29,11 +29,12 @@
 
 	}
 
-	if(empty($objective)) {
-		http_response_code(404);
-		header("Location: /404");
-		die("Request Invalido");
+	if(empty($objectiveto)) {
+	http_response_code(404);
+	header("Location: /404");
+	die("Request Invalido");
 	}
+
 
 	require("views/editobjective.php");
 ?>

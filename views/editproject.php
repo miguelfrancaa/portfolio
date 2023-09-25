@@ -30,6 +30,7 @@
 				<div class="row-no-padding">
 					<div class="col-md-12">
 						<input type="hidden" name="project_id" value="<?= $project["project_id"] ?>">
+						<input type="hidden" name="photoBefore" value="">
 						<label>
 							<h2>TITLE</h2><br>
 							<input type="text" name="project_title" value="<?= $project["title"] ?>" minlength="1" maxlength="64" required>
@@ -38,7 +39,7 @@
 					<div class="col-md-12">
 						<label>
 							<h2>DESCRIPTION</h2><br>
-							<textarea name="project_description" class="textAreaBack" minlength="1" required><?= $project["description"] ?></textarea>
+							<textarea name="project_description" class="textAreaBack" minlength="1" required><?= $project["imf_description"] ?></textarea>
 						</label>
 					</div>
 					<div class="col-md-12">

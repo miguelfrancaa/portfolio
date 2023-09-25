@@ -9,11 +9,11 @@
 
 	$model = new Services();
 
-	$service = $model->serviceToEdit($resource_id);
+	$serviceto = $model->serviceToEdit($resource_id);
 
 	if(isset($_POST["send"])){
 
-		if(isset($_POST["service_title"]) &&
+		if(isset($_POST["service_title"]) && _POST["service_title"] != '' &&
 			isset($_POST["service_content"]) && $_POST["service_content"] != '' &&
 			mb_strlen($_POST["service_title"]) >= 1 &&
 			mb_strlen($_POST["service_title"]) <= 64 &&
@@ -28,10 +28,10 @@
 
 	}
 
-	if(empty($service)) {
-		http_response_code(404);
-		header("Location: /404");
-		die("Request Invalido");
+	if(empty($serviceto)) {
+	http_response_code(404);
+	header("Location: /404");
+	die("Request Invalido");
 	}
 
 	require("views/editservice.php");

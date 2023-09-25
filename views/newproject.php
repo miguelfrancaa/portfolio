@@ -49,7 +49,7 @@
 					<div class="col-md-8">
 						<label>
 							TEXT1<br>
-							<textarea class="textAreaBack" name="text1" minlength="1" required></textarea>
+							<textarea class="textAreaBack" name="text1" minlength="1" ></textarea>
 						</label>
 					</div>
 					<div class="col-md-8">

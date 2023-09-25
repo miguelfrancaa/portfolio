@@ -35,7 +35,7 @@
 			<div style="background-color: white; font-size: 15px;"><?= $contact["name"] ?></div></div>
 		<div class="sectionAb">
 		<h4>EMAIL</h4>
-			<div style="background-color: white; font-size: 15px;"><?= $contact["email"] ?></div><br></div>
+			<div style="background-color: white; font-size: 15px;"><a href="mailto: <?= $contact["email"] ?>"><?= $contact["email"] ?></a></div><br></div>
 		<div class="sectionAb">
 		<h4>SUBJECT</h4>
 			<div style="background-color: white; font-size: 15px;"><?= $contact["subject"] ?></div></div>

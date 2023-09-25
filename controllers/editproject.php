@@ -8,9 +8,7 @@
 	if(isset($_POST["send"])){
 		if(isset($_POST["project_title"]) && !empty($_POST["project_title"]) &&
 			isset($_POST["project_description"]) && !empty($_POST["project_description"]) &&
-			isset($_POST["project_text1"]) && !empty($_POST["project_text1"]) 
-	
-		){
+			isset($_POST["project_text1"]) && !empty($_POST["project_text1"])){
 
 			move_uploaded_file($_FILES["project_imgdescription"]["tmp_name"], "img/projects/" . $_FILES["project_imgdescription"]["name"]);
 

@@ -9,16 +9,20 @@
 	if(isset($_POST["send"])){
 
 		foreach($_POST as $key => $value) {
+			if($key != 'category'){
 			$_POST[ $key ] = trim(htmlspecialchars(strip_tags($value)));
 		}
+	}
 
 		if(isset($_POST["title"]) &&
-			isset($_POST["description"]) && $_POST["description"] !== '' &&
-			isset($_POST["text1"]) && $_POST["text1"] !== '' &&
-			file_exists($_FILES['img_description']['tmp_name']) || is_uploaded_file($_FILES['img_description']['tmp_name']) &&
-			mb_strlen($_POST["title"]) >= 1 &&
+			isset($_POST["description"]) && $_POST["description"] != '' &&
+			isset($_POST["text1"]) && $_POST["text1"] != '' &&
+			(file_exists($_FILES['img_description']['tmp_name']) || is_uploaded_file($_FILES['img_description']['tmp_name'])) &&
+			mb_strlen($_POST["title"]) >= 4 &&
 			mb_strlen($_POST["title"]) <= 64 &&
 			mb_strlen($_POST["description"]) <= 1000){
+
+		$extension = explode(".", strtolower($_FILES['img_description']['name']));
 
 		$cat = $_POST['category'];
 
@@ -41,6 +45,4 @@
 	}
 
 	require("views/newproject.php");
-
-	echo $cat;
 ?> 
