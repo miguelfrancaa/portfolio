@@ -6,13 +6,13 @@
 		<div class="initialWindow">
 		<div class="container presentation">
 			<div class="row">
-				<div class="col-md-12 gdesigner"><span class="gabiru">GABRIEL FERNANDES</span>,<br><span class="graphicdesigner">GRAPHIC DESIGNER</span></div>
+				<div class="col-md-12 gdesigner"><span class="gabiru">BEATRIZ PAIS</span>,<br><span class="graphicdesigner">GRAPHIC DESIGNER</span></div>
 			</div>
 			<div class="row">
 				<div class="col-md-8 col-sm-12 col-xs-12 gabout"><div class="gabout1">Through strategic art direction and webdesign </div> <div class="gabout2">I help companies around the world grow their business.</div></div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 gcontact"><a class="contact" href="mailto:gabrielfrnds@gmail.com">gabrielfrnds@gmail.com</a></div>
+				<div class="col-md-12 gcontact"><a class="contact" href="mailto:btrzpais@gmail.com">btrzpais@gmail.com</a></div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-12 col-xs-12 col-sm-12 arrowdownnnn">

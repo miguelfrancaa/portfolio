@@ -18,6 +18,15 @@
 	<script src="/js/bootstrap.min.js"></script>
 
 	<script src="/js/scriptadmin.js"></script>
+	<script src="/js/tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", () => {
+
+				tinymce.init({
+					selector: 'textarea'
+				})
+			})
+		</script>
 </head>
 <body class="body">	
 	<?php include('includes/headeradmin.php'); ?>
@@ -39,7 +48,7 @@
 					<div class="col-md-12">
 						<label>
 							<h2>DESCRIPTION</h2><br>
-							<textarea name="project_description" class="textAreaBack" minlength="1" required><?= $project["imf_description"] ?></textarea>
+							<input type="text" name="project_description" value="<?= $project["description"] ?>" >
 						</label>
 					</div>
 					<div class="col-md-12">
@@ -57,7 +66,7 @@
 					<div class="col-md-12">
 						<label>
 							<h2>TEXT2</h2><br>
-							<textarea name="project_text2" class="textAreaBack" minlength="1" required><?= $project["content2"] ?></textarea>
+							<textarea name="project_text2" class="textAreaBack" minlength="1"><?= $project["content2"] ?></textarea>
 						</label>
 					</div>
 					<div class="col-md-12">

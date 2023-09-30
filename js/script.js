@@ -3,7 +3,7 @@ $(".contact").hover(function(){
 })
 
 $(".contact").mouseout(function(){
-	$(this).text('gabrielfrnds@gmail.com');
+	$(this).text('btrzpais@gmail.com');
 })
 
 //

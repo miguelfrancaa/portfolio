@@ -18,6 +18,15 @@
 	<script src="/js/bootstrap.min.js"></script>
 
 	<script src="/js/scriptadmin.js"></script>
+	<script src="/js/tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", () => {
+
+				tinymce.init({
+					selector: 'textarea'
+				})
+			})
+		</script>
 </head>
 <body class="body">	
 	<?php include('includes/headeradmin.php'); ?>
@@ -88,7 +97,7 @@
 <?php
 	foreach ($categories as $category) {
 		echo "
-			<label><input type='checkbox' name='category[]' value='". $category["category_id"] ."'>". $category["name"] ."</label><br>
+			<label><input type='checkbox' name='category' value='". $category["category_id"] ."'>". $category["name"] ."</label><br>
 		";
 	}
 ?>
