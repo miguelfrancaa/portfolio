@@ -6,7 +6,7 @@
 			</div>
 
 			<div class="logotipo">
-				<img src="img/logo.png">
+				<div style="padding-top: 50px; margin-bottom: 50px; text-align: left;"><h2>BEATRIZ PAIS<br> PORTFOLIO</h2></div>
 			</div>
 
 			<div class="menu-ul">

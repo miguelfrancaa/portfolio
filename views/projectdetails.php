@@ -23,8 +23,7 @@
 	<?php include('includes/headeradmin.php'); ?>
 	
 	<section class="cabecalho">
-		<h1 class="titulo-crm">CONTACTOS</h1>
-		<h6 class="descricao-crm">Aqui verificamos todos os pedidos de contacto que o site gera.</h6>
+		<h1 class="titulo-crm">PROJECT DETAILS</h1>
 	</section>
 	<section class="dados-lista">
 		<div class="sectionAb">
